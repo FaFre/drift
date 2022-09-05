@@ -183,7 +183,7 @@ class RowId extends TableColumn {
   RowId() : super('rowid', const ResolvedType(type: BasicType.int));
 
   @override
-  bool get includedInResults => false;
+  bool get includedInResults => true;
 }
 
 /// A column that is created by an expression. For instance, in the select
